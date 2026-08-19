@@ -19,7 +19,7 @@ export default async function handler(req, res) {
 
   try {
     // 4. Construct Gemini API URL using backticks (Template Literals)
-    const url = `https://generativelanguage.googleapis.com/v1beta/gemini-1.5-flash:generateContent?key=${apiKey}`;
+    const url = `https://generativelanguage.googleapis.com/v1/gemini-1.5-flash:generateContent?key=${apiKey}`;
 
     // 5. Send POST request with timeout safety controller
     const controller = new AbortController();

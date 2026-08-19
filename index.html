@@ -156,7 +156,7 @@
         // --- SECURE API CALL (Talking to your new backend) ---
         async function callGeminiAPI(promptText) {
             try {
-                const response = await fetch('/api/chat', {
+                const response = await fetch('/api/Chat', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ promptText: promptText })
